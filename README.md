@@ -37,3 +37,33 @@ on WSL2.
 
 ## Project Status
 Environment preparation in progress.
+
+## Kubernetes Deployment
+
+Successfully installed and configured:
+
+- Minikube v1.39.0
+- kubectl v1.37.2
+- Helm v4.3.0
+- Docker v29.9.2
+
+### Local Cluster Configuration
+
+- Driver: Docker
+- Kubernetes version: v1.37.0
+- Control-plane node: minikube
+- CPUs allocated: 2
+- Memory allocated: 3072 MB
+- Container runtime: containerd
+
+### Cluster Verification
+
+The Minikube cluster started successfully.
+The control-plane node reported Ready status.
+The kubelet and API server were running.
+kubectl was automatically configured to use Minikube.
+
+### Application Deployment
+
+An Nginx demonstration deployment was created
+to verify Kubernetes workload scheduling.
