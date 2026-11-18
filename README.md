@@ -94,7 +94,39 @@ See `documentation/installation-notes.md` for installation methods, configuratio
 
 ## Submission Evidence
 
-1. Tooling verification report: `reports/tooling-verification.txt`
-   - Contains version checks for all 14 required tools.
-2. Local Kubernetes cluster proof: `screenshots/minikube-cluster.png`
-   - Shows the Minikube control-plane node with status Ready.
+The following evidence files demonstrate the installation, configuration and verification of the DevOps environment.
+
+### 1. Development Tools
+
+- `screenshots/git-vscode-installation.png` — Git and Visual Studio Code installation and version checks.
+- `screenshots/github-repository.png` — GitHub account and project repository evidence.
+
+### 2. Cloud Account Setup
+
+- `screenshots/aws-account-setup.png` — AWS Management Console account setup evidence.
+- `screenshots/azure-account-setup.png` — Microsoft Azure Portal account setup evidence.
+
+### 3. Cloud CLI Verification
+
+- `screenshots/aws-azure-cli-versions.png` — AWS CLI and Azure CLI version output.
+  - AWS CLI: 2.41.0
+  - Azure CLI: 2.93.0
+
+### 4. Kubernetes Cluster
+
+- `screenshots/minikube-cluster.png` — Local Minikube cluster verification showing the control-plane node in Ready status.
+
+### 5. Automated Tooling Verification
+
+- `reports/tooling-verification.txt` — Automated verification report covering 14 installed tools, system information, Docker connectivity and Minikube status.
+
+### 6. Git Version Control
+
+The repository uses Git for version control. Meaningful commits document the project setup, Kubernetes configuration, environment verification and submission evidence.
+
+To inspect the commit history, run:
+
+`git log --oneline --decorate --graph -10`
+
+The repository is hosted at:
+https://github.com/Tonygold0/devops-environment-setup
