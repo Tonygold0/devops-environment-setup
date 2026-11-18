@@ -36,14 +36,14 @@ on WSL2.
 - Docker as the Minikube driver
 
 ## Project Status
-Environment preparation in progress.
+Environment setup and verification completed.
 
 ## Kubernetes Deployment
 
 Successfully installed and configured:
 
 - Minikube v1.39.0
-- kubectl v1.37.2
+- kubectl v1.36.1
 - Helm v4.3.0
 - Docker v29.9.2
 
@@ -63,7 +63,38 @@ The control-plane node reported Ready status.
 The kubelet and API server were running.
 kubectl was automatically configured to use Minikube.
 
-### Application Deployment
 
-An Nginx demonstration deployment was created
-to verify Kubernetes workload scheduling.
+## Environment Verification
+
+Run the automated verification script using:
+
+`./scripts/verify-tools.sh`
+
+The script checks installed tool versions, operating system details, SSH permissions, Docker connectivity and Minikube status.
+
+The generated report is saved to `reports/tooling-verification.txt`.
+
+## Environment Configuration
+
+A sample environment configuration is provided in `documentation/environment-config.sh`.
+
+To load it into the current terminal session, run:
+
+`source documentation/environment-config.sh`
+
+## Security
+
+The repository includes a `.gitignore` file to help prevent accidental commits of credentials, SSH keys, Terraform state and other sensitive files.
+
+Never commit private keys, cloud credentials, access tokens or passwords.
+
+## Installation Documentation
+
+See `documentation/installation-notes.md` for installation methods, configuration details and troubleshooting notes.
+
+## Submission Evidence
+
+1. Tooling verification report: `reports/tooling-verification.txt`
+   - Contains version checks for all 14 required tools.
+2. Local Kubernetes cluster proof: `screenshots/minikube-cluster.png`
+   - Shows the Minikube control-plane node with status Ready.

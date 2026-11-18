@@ -1,0 +1,125 @@
+==================================================
+       DEVOPS ENVIRONMENT VERIFICATION REPORT
+==================================================
+Date: Wed Nov 18 16:59:51 GMT 2026
+User: TonyDev
+Hostname: TONY
+Architecture: x86_64
+
+===== OPERATING SYSTEM =====
+PRETTY_NAME="Ubuntu 26.04.1 LTS"
+VERSION_ID="26.04"
+
+===== TOOL VERSION CHECKS =====
+
+--- git ---
+git version 2.53.0
+Status: INSTALLED
+
+--- docker ---
+Docker version 29.9.2, build a82e528
+Status: INSTALLED
+
+--- minikube ---
+minikube version: v1.39.0
+commit: 7a9f6a841470a207de8cf4bafcccee0969d8ba10
+Status: INSTALLED
+
+--- kubectl ---
+Client Version: v1.36.1
+Kustomize Version: v5.8.1
+Status: INSTALLED
+
+--- helm ---
+v4.3.0+gbec5b06
+Status: INSTALLED
+
+--- aws ---
+aws-cli/2.41.0 Python/3.14.8 Linux/6.18.58.1-microsoft-standard-WSL2 script-exe/x86_64.ubuntu.26
+Status: INSTALLED
+
+--- az ---
+2.93.0
+Status: INSTALLED
+
+--- node ---
+v26.13.1
+Status: INSTALLED
+
+--- npm ---
+11.20.0
+Status: INSTALLED
+
+--- nvm ---
+0.40.3
+Status: INSTALLED
+
+--- jq ---
+jq-1.8.1
+Status: INSTALLED
+
+--- terraform ---
+Terraform v1.17.2
+on linux_amd64
+
+Status: INSTALLED
+
+--- ansible ---
+ansible [core 2.22.0]
+  config file = None
+  configured module search path = ['/home/TonyDev/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /home/TonyDev/.local/share/pipx/venvs/ansible/lib/python3.14/site-packages/ansible
+  ansible collection location = /home/TonyDev/.ansible/collections:/usr/share/ansible/collections
+  executable location = /home/TonyDev/.local/bin/ansible
+  python version = 3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0] (/home/TonyDev/.local/share/pipx/venvs/ansible/bin/python)
+  jinja version = 3.1.6
+  pyyaml version = 6.0.3 (with libyaml v0.2.5)
+Status: INSTALLED
+
+--- python3 ---
+Python 3.14.4
+Status: INSTALLED
+
+===== SYSTEM AND USER SECURITY =====
+Current user:
+uid=1000(TonyDev) gid=1000(TonyDev) groups=1000(TonyDev),4(adm),20(dialout),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),100(users),105(netdev),1001(docker)
+
+Current umask:
+0022
+
+SSH directory permissions:
+700 drwx------ /home/TonyDev/.ssh
+
+SSH private key permissions:
+600 -rw------- /home/TonyDev/.ssh/id_ed25519
+600 -rw------- /home/TonyDev/.ssh/id_ed25519_github_new
+
+Git repository status:
+## main...origin/main
+ M README.md
+ M documentation/installation-notes.md
+ M reports/tooling-verification.txt
+ M scripts/verify-tools.sh
+?? .gitignore
+?? documentation/environment-config.sh
+?? screenshots/
+
+===== KUBERNETES STATUS =====
+minikube
+type: Control Plane
+host: Running
+kubelet: Running
+apiserver: Running
+kubeconfig: Configured
+
+
+Kubernetes nodes:
+NAME       STATUS   ROLES           AGE   VERSION   INTERNAL-IP    EXTERNAL-IP   OS-IMAGE                         KERNEL-VERSION                              CONTAINER-RUNTIME
+minikube   Ready    control-plane   69m   v1.37.0   192.168.49.2   <none>        Debian GNU/Linux 12 (bookworm)   6.18.58.1-microsoft-standard-WSL2 (amd64)   containerd://2.3.4
+
+===== DOCKER STATUS =====
+Docker server version: 29.9.2
+
+===== VERIFICATION COMPLETE =====
+Report generated: /home/TonyDev/devops-environment-setup/reports/tooling-verification.txt
+==================================================
